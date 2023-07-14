@@ -20,7 +20,10 @@ public class BOJ26008 {
      * 3. 가능한 비밀번호의 가짓수는 M^N
      * 4. 나올 수 있는 해시값의 개수(해시 테이블 사이즈)는 M
      * 5. 각 해시값 당 충돌이 일어날 확률은 M^(N-1)
-     * */
+     * @question
+     * 해시값 충돌이 일어날 확률일 뿐 이것을 실제로 겹치는 경우의 수라고 말할 수 있는지?
+     */
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
