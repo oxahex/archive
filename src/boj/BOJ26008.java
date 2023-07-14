@@ -31,7 +31,6 @@ public class BOJ26008 {
         int a = sc.nextInt();
         int h = sc.nextInt();
 
-        String v = "";
         long answer = 1;
         for (int i = 0; i < n - 1; i++) {
             answer = (answer * m) % 1000000007;
