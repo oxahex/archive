@@ -12,7 +12,7 @@ import java.util.Scanner;
  * 주어진 해시값을 갖는 비밀번호의 개수를 출력한다. 출력하는 값이 너무 커질 수 있으므로,
  * 이것을 1,000,000,007 (= 10^9 + 7)로 나눈 나머지를 출력한다.
  */
-public class BOJ26008 {
+public class BOJ_26008 {
     /**
      * @note
      * <pre>

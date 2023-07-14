@@ -15,7 +15,7 @@ import java.util.Scanner;
  * @output
  * 첫째 줄에 문제의 정답을 출력한다.
  */
-public class BOJ1021 {
+public class BOJ_1021 {
 
     /**
      * @note

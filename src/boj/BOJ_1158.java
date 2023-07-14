@@ -14,7 +14,7 @@ import java.util.Scanner;
  * 요세푸스 순열을 출력한다.
  * <3, 6, 2, 7, 5, 1, 4>
  */
-public class BOJ1158 {
+public class BOJ_1158 {
 
     /**
      * @note
