@@ -13,11 +13,11 @@ import java.io.*;
  * @output
  * 출력해야하는 명령이 주어질 때마다, 한 줄에 하나씩 출력한다.
  */
-class PStack {
+class Stack_10828 {
     private int top;
     private int[] stack;
 
-    public PStack(int size) {
+    public Stack_10828(int size) {
         this.stack = new int[size];
         this.top = -1;
     }
@@ -60,7 +60,7 @@ public class BOJ_10828 {
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         int n = Integer.parseInt(br.readLine());
 
-        PStack pStack = new PStack(n);
+        Stack_10828 pStack = new Stack_10828(n);
 
         for (int i = 0; i < n; i++) {
             String op = br.readLine();
