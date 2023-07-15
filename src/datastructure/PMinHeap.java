@@ -54,7 +54,7 @@ public class PMinHeap {
                 targetIdx = heap.get(leftIdx) < heap.get(rightIdx) ? leftIdx : rightIdx;
             } else if (leftIdx < heap.size()) {  // 자식 노드가 하나 있는 케이스: 당연히 왼쪽에 있음(완전 이진트리)
                 targetIdx = leftIdx;
-            } else {    // 자식 노드가 없음: 부모 노드 밖에 없거나 리프 노드
+            } else {    // 자식 노드가 없음: 리프 노드
                 break;
             }
 
