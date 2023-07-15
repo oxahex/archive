@@ -48,6 +48,7 @@ public class PMinHeap {
             int rightIdx = curIdx * 2 + 1;
             int targetIdx = -1;
 
+            // idx 1부터 시작했음
             if (rightIdx < heap.size()) {   // 자식 노드가 왼쪽, 오른쪽 모두 있는 케이스
                 // 자식 노드가 작은 쪽으로 target idx 설정
                 targetIdx = heap.get(leftIdx) < heap.get(rightIdx) ? leftIdx : rightIdx;
