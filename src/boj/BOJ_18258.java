@@ -62,8 +62,17 @@ public class BOJ_18258 {
     /**
      * <pre>
      *     LinkedList를 이용해서 구현하는 방법도 있음.
-     *     그래도 입력해야 하는 명령어의 개수가 주어지므로 필요한 공간의 최대 크기를 알 수 있어서
-     *     배열로 구현했다.
+     *     그래도 입력해야 하는 명령어의 개수가 주어지므로 필요한 공간의 최대 크기를 알 수 있어서 배열로 구현했다.
+     *
+     *     front, back 값을 조정하는 것이 구현의 핵심.
+     *     초기값은 모두 -1
+     *     push ->  arr[++back] 에 값을 추가
+     *              최초에 값을 넣는 경우에만 front++ -> 0 으로 만들어 놓음.  // 여기가 조금 부정확...
+     *              그 외에는 pop 명령 시에만 front++
+     *     pop ->   front++
+     *              back 값은 그대로 둔다.
+     *     front > back 을 만족하는 경우 값이 없음     // 이걸 이용하면 front 초기값을 -1로 하지 않아도 될 것 같음.
+     *     front == back 을 만족하는 경우 값이 1개
      * </pre>
      * */
     public static void main(String[] args) throws IOException {
