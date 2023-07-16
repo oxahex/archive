@@ -11,7 +11,6 @@ package prgrms;
 public class PRGRMS_120840 {
 
     /**
-     * @note
      * <pre>
      *     제한사항
      *     - 1 <= balls <= 30

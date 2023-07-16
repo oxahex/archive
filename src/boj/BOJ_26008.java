@@ -14,7 +14,6 @@ import java.util.Scanner;
  */
 public class BOJ_26008 {
     /**
-     * @note
      * <pre>
      *     1. 해시값이 몇 번 충돌하는가를 묻는 문제.
      *     2. mod M 이므로 가능한 해시값의 범위는 0 < 해시값 <= M-1

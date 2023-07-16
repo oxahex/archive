@@ -48,7 +48,6 @@ class Stack_10828 {
 public class BOJ_10828 {
 
     /**
-     * @note
      * <pre>
      *     스택을 구현하는 문제이고 어려운 문제는 아니었으나
      *     Scanner 사용 시 시간 초과

@@ -17,7 +17,6 @@ import java.util.Scanner;
 public class BOJ_1158 {
 
     /**
-     * @note
      * <pre>
      *     Queue 이용해서 구현하면 어려운 문제는 아니라고 생각함.
      *     k 번째 마다 큐에서 remove -> 정답 배열에 추가하거나, remove -> 다시 add 처리하면 되는...

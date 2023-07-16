@@ -18,7 +18,6 @@ public class BOJ_24174 {
     static StringBuilder captured = new StringBuilder();
 
     /**
-     * @note
      * <pre>
      *     주어진 의사 코드를 해석하는 것이 익숙하지 않아서 그런지 index가 헷갈렸고
      *     지금 구현한 것과 같이 완전히 정렬한 상태에서 교환 횟수를 비교하는 것이 아니라
