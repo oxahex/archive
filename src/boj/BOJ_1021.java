@@ -7,6 +7,7 @@ import java.util.Scanner;
 /**
  * @date    2023-07-13
  * @title   회전하는 큐(1021) S3
+ * @tags    Deque(덱), 자료구조
  * @input
  * 첫째 줄에 큐의 크기 N과 뽑아내려고 하는 수의 개수 M이 주어진다.
  * N은 50보다 작거나 같은 자연수이고, M은 N보다 작거나 같은 자연수이다.

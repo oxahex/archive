@@ -8,6 +8,7 @@ import java.io.InputStreamReader;
 /**
  * @date    2023-07-18
  * @title   행성 X3(2830) G3
+ * @tags    수학, 비트마스킹
  * @input
  * 첫째 줄에 X3 거주민의 수 N이 주어진다. (1 ≤ N ≤ 1,000,000)
  * 다음 N개의 줄에는 거주민의 이름이 주어진다.

@@ -6,6 +6,7 @@ import java.util.Stack;
 /**
  * @date    2023-07-17
  * @title   괄호(9012) S4
+ * @tags    문자열, Stack(스택), 자료구조
  * @input
  * 입력 데이터는 표준 입력을 사용한다.
  * 입력은 T개의 테스트 데이터로 주어진다.

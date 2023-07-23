@@ -8,6 +8,7 @@ import java.util.Scanner;
 /**
  * @date    2023-07-14
  * @title   요세푸스 문제(1158) S4
+ * @tags    구현, 자료구조, Queue(큐)
  * @input
  * 첫째 줄에 N과 K가 빈 칸을 사이에 두고 순서대로 주어진다. (1 ≤ K ≤ N ≤ 5,000)
  * @output
