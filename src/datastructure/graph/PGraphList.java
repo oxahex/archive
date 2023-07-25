@@ -1,5 +1,9 @@
 package datastructure.graph;
 
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Stack;
+
 class PGraphNode {
     int id;
     PGraphNode next;
@@ -55,6 +59,50 @@ public class PGraphList {
                 cur = cur.next;
             }
             System.out.println();
+        }
+    }
+
+    public void dfs(int id) {
+        boolean[] visited = new boolean[this.elementCount];
+        Stack<Integer> stack = new Stack<>();
+
+        stack.push(id);
+        visited[id] = true;
+
+        while (!stack.isEmpty()) {
+            int currentId = stack.pop();
+            System.out.print(this.vertices[currentId] + " ");
+
+            PGraphNode currentNode = this.adjList[currentId];
+            while (currentNode != null) {
+                if (!visited[currentNode.id]) {
+                    stack.push(currentNode.id);
+                    visited[currentNode.id] = true;
+                }
+                currentNode = currentNode.next;
+            }
+        }
+    }
+
+    public void bfs(int id) {
+        boolean[] visited = new boolean[this.elementCount];
+        Queue<Integer> q = new LinkedList<>();
+
+        q.offer(id);
+        visited[id] = true;
+
+        while (!q.isEmpty()) {
+            int currentId = q.poll();
+            System.out.print(this.vertices[currentId] + " ");
+
+            PGraphNode currentNode = this.adjList[currentId];
+            while (currentNode != null) {
+                if (!visited[currentNode.id]) {
+                    q.offer(currentNode.id);
+                    visited[currentNode.id] = true;
+                }
+                currentNode = currentNode.next;
+            }
         }
     }
 }
