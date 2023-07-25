@@ -1,5 +1,9 @@
 package datastructure.graph;
 
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Stack;
+
 public class PGraphMatrix {
     char[] vertices;
     int[][] adjMatrix;
@@ -54,5 +58,54 @@ public class PGraphMatrix {
             }
             System.out.println();
         }
+    }
+
+    public void dfs(int id) {
+        boolean[] visited = new boolean[this.elementCount];
+        Stack<Integer> stack = new Stack<>();
+
+        // 순회 시작 정점부터 stack.push()
+        stack.push(id);
+        visited[id] = true;
+
+        // 그래프를 돌면서 방문한 이력이 없으면 스택에 순차적으로 넣고 빼고를 반복(stack.isEmpty() == false 인 동안)
+        while (!stack.isEmpty()) {
+            // 일단 하나 꺼냄
+            int currentId = stack.pop();
+            System.out.print(this.vertices[currentId] + " ");
+
+            // 인접 정점 정보를 확인: 인접 행렬이므로 반복문 돌며 확인
+            for (int i = this.elementCount - 1; i >= 0; i--) {
+                // 1이면 간선 있음 && 방문 이력 없음
+                if (this.adjMatrix[currentId][i] == 1 && !visited[i]) {
+                    stack.push(i);
+                    visited[i] = true;
+                }
+            }
+        }
+        System.out.println();
+    }
+
+    public void bfs(int id) {
+        boolean[] visited = new boolean[this.elementCount];
+        Queue<Integer> q = new LinkedList<>();
+
+        // 순회 시작 정점부터 queue 에 데이터 삽입
+        q.offer(id);
+        visited[id] = true;
+
+        // 그래프를 돌면서 방문한 이력이 없으면 큐에 순차적으로 넣고 빼고를 반복(q.isEmpty() == false 인 동안)
+        while (!q.isEmpty()) {
+            int currentId = q.poll();
+            System.out.print(this.vertices[currentId] + " ");
+
+            for (int i = this.elementCount - 1; i >= 0; i--) {
+                if (this.adjMatrix[currentId][i] == 1 && !visited[i]) {
+                    q.offer(i);
+                    visited[i] = true;
+                }
+            }
+        }
+        System.out.println();
     }
 }
