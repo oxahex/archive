@@ -5,6 +5,7 @@ import java.util.*;
 /**
  * @date    2023-07-16
  * @title   기능개발(42586)
+ * @tags    Stack, Queue
  * @input
  * 먼저 배포되어야 하는 순서대로 작업의 진도가 적힌 정수 배열 progresses와 각 작업의 개발 속도가 적힌 정수 배열 speeds가 주어진다.
  * @output

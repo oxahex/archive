@@ -3,6 +3,7 @@ package prgrms;
 /**
  * @date    2023-07-14
  * @title   구슬을 나누는 경우의 수(120840)
+ * @tags    수학, 정수론
  * @input
  * 머쓱이가 갖고 있는 구슬의 개수 balls와 친구들에게 나누어 줄 구슬 개수 share이 매개변수로 주어진다.
  * @output
