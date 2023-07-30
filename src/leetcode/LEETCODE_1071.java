@@ -31,6 +31,8 @@ public class LEETCODE_1071 {
      *
      *      두 문자열은 같은 길이의 문자로 나눌 수 있어야 하므로,
      *      두 문자열 길이의 최대 공약수 만큼의 길이를 가지는 문자열로 반드시 나눌 수 있음.
+     *
+     *      결과적으로 시간복잡도는 O(m + n)
      * </pre>
      * */
     public String gcdOfStrings(String str1, String str2) {
