@@ -4,7 +4,7 @@ import java.io.*;
 
 /**
  * @date    2023-07-31
- * @title   2차원 배열의 합(1260) S5
+ * @title   2차원 배열의 합(2167) S5
  * @tags    DP, Prefix Sum
  * @input
  * 첫째 줄에 배열의 크기 N, M(1 ≤ N, M ≤ 300)이 주어진다.
