@@ -3,8 +3,8 @@ package leetcode;
 
 /**
  * @date    2023-08-02
- * @title   Container With Most Water(11)
- * @tags    String, Math
+ * @title   Container With Most Water(11), Medium
+ * @tags    Two Pointers, Greedy
  * @input
  * You are given an integer array height of length n.
  * There are n vertical lines drawn such that the two endpoints of the ith line are (i, 0) and (i, height[i]).
