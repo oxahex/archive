@@ -4,7 +4,7 @@ import java.util.Stack;
 
 /**
  * @date    2023-08-02
- * @title   Daily Temparatures(739), Medium
+ * @title   Daily Temperatures(739), Medium
  * @tags    Array, Stack, Monotonic Stack
  * @input
  * Given an array of integers temperatures represents the daily temperatures,
