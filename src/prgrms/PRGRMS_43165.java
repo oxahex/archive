@@ -2,7 +2,7 @@ package prgrms;
 
 /**
  * @date    2023-07-26
- * @title   타겟 넘버(43165)
+ * @title   타겟 넘버(43165), L2
  * @tags    Binary Tree(이진 트리), DFS, BFS, Recursion(재귀)
  * @input
  * 사용할 수 있는 숫자가 담긴 배열 numbers, 타겟 넘버 target이 매개변수로 주어진다.
