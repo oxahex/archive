@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.medium;
 
 /**
  * @date    2023-08-03

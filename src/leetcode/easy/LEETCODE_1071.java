@@ -1,8 +1,8 @@
-package leetcode;
+package leetcode.easy;
 
 /**
  * @date    2023-07-30
- * @title   Greatest Common Divisor of Strings(1071)
+ * @title   Greatest Common Divisor of Strings(1071), Easy
  * @tags    String, Math
  * @input
  * Given two strings str1 and str2,
