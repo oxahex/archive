@@ -1,4 +1,4 @@
-package prgrms;
+package prgrms.lev0;
 
 /**
  * @date    2023-07-14

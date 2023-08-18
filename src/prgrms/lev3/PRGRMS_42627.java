@@ -1,4 +1,4 @@
-package prgrms;
+package prgrms.lev3;
 
 import java.util.*;
 
