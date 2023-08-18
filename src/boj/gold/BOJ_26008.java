@@ -1,4 +1,4 @@
-package boj;
+package boj.gold;
 
 import java.util.Scanner;
 

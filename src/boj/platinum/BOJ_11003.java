@@ -1,4 +1,4 @@
-package boj;
+package boj.platinum;
 
 import java.io.*;
 import java.util.*;
@@ -50,7 +50,7 @@ public class BOJ_11003 {
         int L = Integer.parseInt(st.nextToken());
 
         st = new StringTokenizer(br.readLine());
-        Deque<Node> dq = new LinkedList<>();
+        Deque<Node_11003> dq = new LinkedList<>();
 
         for (int i = 0; i < N; i++) {
             int cur = Integer.parseInt(st.nextToken());
@@ -58,7 +58,7 @@ public class BOJ_11003 {
             while (!dq.isEmpty() && dq.getLast().value > cur) {
                 dq.removeLast();
             }
-            dq.addLast(new Node(i, cur));
+            dq.addLast(new Node_11003(i, cur));
             if (dq.getFirst().index <= i - L) {
                 dq.removeFirst();
             }
@@ -72,11 +72,11 @@ public class BOJ_11003 {
     }
 }
 
-class Node {
+class Node_11003 {
     int index;
     int value;
 
-    public Node(int index, int value) {
+    public Node_11003(int index, int value) {
         this.index = index;
         this.value = value;
     }

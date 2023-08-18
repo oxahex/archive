@@ -1,4 +1,4 @@
-package boj;
+package boj.gold;
 
 import java.util.*;
 
@@ -19,7 +19,7 @@ import java.util.*;
 public class BOJ_1167 {
     public static boolean[] visited;
     public static int[] dist;
-    public static ArrayList<Edge>[] edges;
+    public static ArrayList<Edge_1167>[] edges;
 
     /**
      * <pre>
@@ -51,7 +51,7 @@ public class BOJ_1167 {
                 if (a == -1) break;
                 int b = sc.nextInt();
 
-                edges[v].add(new Edge(a, b));
+                edges[v].add(new Edge_1167(a, b));
             }
         }
 
@@ -81,7 +81,7 @@ public class BOJ_1167 {
         if (visited[v]) return;
         visited[v] = true;
 
-        for (Edge e : edges[v]) {
+        for (Edge_1167 e : edges[v]) {
             if (!visited[e.name]) {
                 dist[e.name] = dist[v] + e.value;
                 dfs(e.name);
@@ -90,11 +90,11 @@ public class BOJ_1167 {
     }
 }
 
-class Edge {
+class Edge_1167 {
     int name;
     int value;
 
-    public Edge(int name, int value) {
+    public Edge_1167(int name, int value) {
         this.name = name;
         this.value = value;
     }

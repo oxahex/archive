@@ -1,4 +1,4 @@
-package boj;
+package boj.gold;
 
 import java.io.*;
 import java.util.Stack;
