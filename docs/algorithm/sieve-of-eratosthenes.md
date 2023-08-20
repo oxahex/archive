@@ -48,7 +48,7 @@ public class Main {
         Arrays.fill(isPrime, true);
         isPrime[0] = isPrime[1] = false;
 
-        for (int i = 2; i < Math.sqrt(N); i++) {
+        for (int i = 2; i <= Math.sqrt(N); i++) {
             if (!isPrime[i]) continue;
             for (int j = i + i; j <= N; j += i) {
                 if (isPrime[j]) isPrime[j] = false;
