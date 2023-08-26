@@ -19,13 +19,13 @@ kill -9 [포트번호]
 **Local -> EC2 Server 파일 업로드**
 ```shell
 # macOS
-scp -i [파일 경로] [업로드할 파일 이름] [ec2 user]@[EC2 public IP]:[경로]
+scp -i [pem 파일 경로] [업로드할 파일 경로] [ec2 user]@[EC2 public IP]:[경로]
 ```
 
 **EC2 Server -> Local 파일 다운로드**
 ```shell
 # macOS
-scp -i [pem파일경로] [ec2 user]@[ec2 public ip]:[경로] [다운로드 파일의 로컬 경로] 
+scp -i [pem 파일 경로] [ec2 user]@[ec2 public ip]:[경로] [다운로드 파일의 로컬 경로] 
 ```
 
 **파일 이동**
