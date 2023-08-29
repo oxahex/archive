@@ -26,7 +26,6 @@ public class BOJ_1707 {
     public static int[] set;
     public static boolean isCycle;
 
-
     /**
      * <pre>
      *     문제 접근
@@ -48,12 +47,10 @@ public class BOJ_1707 {
 
         StringTokenizer st;
         for (int i = 0; i < K; i++) {
-            System.out.println("NEW");
             st = new StringTokenizer(br.readLine());
             int V = Integer.parseInt(st.nextToken());
             int E = Integer.parseInt(st.nextToken());
 
-            System.out.println("V: " + V + ", E: " + E);
             // 정점 개수만큼 ArrayList 배열 생성 후 초기화
             edges = new ArrayList[V + 1];
             visited = new boolean[V + 1];
@@ -69,15 +66,12 @@ public class BOJ_1707 {
                 int a = Integer.parseInt(st.nextToken());
                 int b = Integer.parseInt(st.nextToken());
 
-                System.out.println("a: " + a + ", b: " + b);
-
                 edges[a].add(b);
                 edges[b].add(a);
             }
 
             // 모든 정점 수행, 비연결 그래프 존재 가능성
             for (int t = 1; t <= V; t++) {
-                System.out.println(t + ": " + edges[t]);
                 if (!isCycle) dfs(t);
                 else break;
             }
@@ -88,8 +82,6 @@ public class BOJ_1707 {
     }
 
     public static void dfs(int v) {
-        System.out.println("v: " + v);
-        System.out.println("v: " + edges[v]);
         visited[v] = true;
         for (int i : edges[v]) {
             if (!visited[i]) {
@@ -100,6 +92,5 @@ public class BOJ_1707 {
                 isCycle = true;
             }
         }
-
     }
 }
