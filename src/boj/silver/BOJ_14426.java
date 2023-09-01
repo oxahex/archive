@@ -61,10 +61,6 @@ class Trie_14426 {
 
             cur.child.putIfAbsent(c, new TNode_14426());
             cur = cur.child.get(c);
-
-            if (i == str.length() - 1) {
-                cur.isTerminate = true;
-            }
         }
     }
 
@@ -87,10 +83,8 @@ class Trie_14426 {
 
 class TNode_14426 {
     HashMap<Character, TNode_14426> child;
-    boolean isTerminate;
 
     public TNode_14426() {
         this.child = new HashMap<>();
-        this.isTerminate = false;
     }
 }
