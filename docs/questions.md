@@ -17,3 +17,5 @@ class _ {
     }
 }
 ```
+
+#### Interface가 있고, Interface의 Implement가 있을 때 왜 업캐스팅을 사용하는 것이 권장되는 방식인지?
