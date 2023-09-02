@@ -32,9 +32,13 @@ public class Trie {
         for (int i = 0; i < str.length(); i++) {
             char c = str.charAt(i);
 
+            // child에 현재 문자가 key로 없으면 새로 생성
             cur.child.putIfAbsent(c, new TNode());
+
+            // 현재 TNode를 c에 해당하는 TNode로 변경
             cur = cur.child.get(c);
 
+            // 현재 탐색 중인 문자가 마지막 문자인 경우 끝 문자임을 명시
             if (i == str.length() - 1) {
                 cur.isTerminal = true;
                 return;
@@ -48,12 +52,22 @@ public class Trie {
         for (int i = 0; i < str.length(); i++) {
             char c = str.charAt(i);
 
+            /*
+            문자 c 가 child 가 있으면 다음으로 이동,
+            없으면 str 은 목록에 없으므로 false 리턴
+             */
             if (cur.child.containsKey(c)) {
-                cur = cur.child.get(c);     // 있으면 그 다음 자식 노드로 이동
+                cur = cur.child.get(c);
             } else {
                 return false;
             }
 
+            /*
+             c 가 마지막 문자인 경우,
+             c 가 끝 문자열이면 str 은 존재함
+             끝 문자열이 아니라면 여기까지 동일한 더 긴 문자열이 존재함
+             prefix 를 찾아야 한다면 이 부분이 없어도 될 것 같다.
+             */
             if (i == str.length() - 1) {
                 if (!cur.isTerminal) return false;  // 마지막 도달 시
             }
