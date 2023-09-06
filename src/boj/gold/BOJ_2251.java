@@ -29,11 +29,11 @@ public class BOJ_2251 {
      *     S = {0, 0, 1, 1, 2, 2}
      *     R = {1, 2, 0, 2, 0, 1}
      *
-     *     int max[]            // 처음에 주어지는 각 물통의 최대 부피
-     *     boolean[][] visited  // A, B의 값을 인덱스로 가지는 2차원 배열(A, B 값을 알면 C는 고정)
-     *     boolean[] answer     // A가 0일 때 true로 변경, C 물의 양을 인덱스로 가지는 1차원 배열
+     *     int max[]                // 처음에 주어지는 각 물통의 최대 부피
+     *     boolean[][] visited      // A, B의 값을 인덱스로 가지는 2차원 배열(A, B 값을 알면 C는 고정)
+     *     boolean[] answer         // A가 0일 때 true로 변경, C 물의 양을 인덱스로 가지는 1차원 배열
      *
-     *     Q.add(new AB(0, 0))  // 최초 A, B에 물이 없는 상태부터 탐색
+     *     Q.add(new AB(0, 0))      // 최초 A, B에 물이 없는 상태부터 탐색
      *     visited[0][0] = true     // 방문 처리
      *     answer[max[2]] = true    // C 최대 부피는 항상 답에 포함된다.
      *
@@ -42,7 +42,7 @@ public class BOJ_2251 {
      *      2. 넘치면 넘치는 만큼 주는 쪽으로 돌려보내고, 받는 쪽은 최댓값으로 채움
      *      3. 주고받기가 끝나면 이전에 나왔던 조합인지 visited 배열 황긴
      *      4. 나왔던 조합이 아니면 Q에 삽입
-     *      5. 이 때 A가 0이면(next[0] == 0) answer[next[3]] = true로 만들어 정답 기록
+     *      5. 이 때 A가 0이면(next[0] == 0) answer[next[2]] = true로 만들어 정답 기록
      * </pre>
      * */
     public static void main(String[] args) {
