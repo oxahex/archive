@@ -1,8 +1,9 @@
 package boj.gold;
 
+import java.io.*;
 import java.util.LinkedList;
 import java.util.Queue;
-import java.util.Scanner;
+import java.util.StringTokenizer;
 
 /**
  * @date    2023-09-06
@@ -45,10 +46,14 @@ public class BOJ_2251 {
      *      5. 이 때 A가 0이면(next[0] == 0) answer[next[2]] = true로 만들어 정답 기록
      * </pre>
      * */
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
 
-        int[] max = {sc.nextInt(), sc.nextInt(), sc.nextInt()};
+
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        StringTokenizer st = new StringTokenizer(br.readLine());
+
+        int[] max = {Integer.parseInt(st.nextToken()), Integer.parseInt(st.nextToken()), Integer.parseInt(st.nextToken())};
         boolean[][] visited = new boolean[201][201];
         boolean[] answer = new boolean[201];
         int[] S = {0, 0, 1, 1, 2, 2};
@@ -93,8 +98,12 @@ public class BOJ_2251 {
         }
 
         for (int i = 0; i < 201; i++) {
-            if (answer[i]) System.out.print(i + " ");
+            if (answer[i]) bw.write(i + " ");
         }
+
+        bw.flush();
+        br.close();
+        bw.close();
     }
 }
 
