@@ -131,3 +131,6 @@ public class CatController {
     }
 }
 ```
+
+### @Configuration
+기본적으로 @Component임. 그냥 Config 역할을 하는 Bean.
