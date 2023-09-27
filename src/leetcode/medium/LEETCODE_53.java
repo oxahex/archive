@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * @date    2023-08-05
  * @title   Maximum Subarray(53), Medium
- * @tags    Divide and Conquer(분할정복), Array, Dynamic Programming
+ * @tags    Divide and Conquer(분할정복), Array, DP
  * @input
  * Given an integer array nums,
  * @output
